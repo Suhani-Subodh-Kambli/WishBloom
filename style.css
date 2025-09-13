@@ -1,0 +1,135 @@
+/* Base styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('https://i.imgur.com/3ZQ3Z3Q.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #d36c6c;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#open-modal {
+  padding: 10px 20px;
+  background-color: #d36c6c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#open-modal:hover {
+  background-color: #b84e4e;
+}
+
+#wishlist-container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+li {
+  background: #fff;
+  padding: 15px;
+  border-left: 5px solid #d36c6c;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: white;
+  margin-top: 5px;
+}
+
+.high { background-color: #e74c3c; }
+.medium { background-color: #f1c40f; }
+.low { background-color: #2ecc71; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+#close-modal {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .quote {
+    font-size: 14px;
+  }
+
+  li {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  #open-modal {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .modal-content {
+    margin-top: 20%;
+  }
+}

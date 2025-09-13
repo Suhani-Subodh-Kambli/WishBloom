@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WishBloom 🌸</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>WishBloom 🌸</h1>
+    <p class="quote">“Giving is not just about gifts—it’s about being seen, heard, and remembered.”</p>
+    <button id="open-modal">➕ Add Gift</button>
+  </header>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h2>Add a Gift</h2>
+      <form id="gift-form">
+        <input type="text" id="gift-name" placeholder="Gift name" required>
+        <input type="text" id="occasion" placeholder="Occasion" required>
+        <select id="priority">
+          <option value="High">High 🔴</option>
+          <option value="Medium">Medium 🟡</option>
+          <option value="Low">Low 🟢</option>
+        </select>
+        <button type="submit">Add to Wishlist</button>
+      </form>
+    </div>
+  </div>
+
+  <section id="wishlist-container">
+    <h2>🎁 My Wishlist</h2>
+    <ul id="wishlist"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
